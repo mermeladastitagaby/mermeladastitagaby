@@ -8,9 +8,17 @@
         body { font-family: Arial, sans-serif; color: #2B2D42; background-color: #FFFDF9; line-height: 1.6; text-align: center; padding-bottom: 50px; }
         h1, h2, h3 { color: #8B1E3F; margin: 15px 0 10px 0; font-weight: bold; text-align: center; }
         p { margin-bottom: 10px; font-size: 1.05rem; text-align: center; max-width: 650px; margin-left: auto; margin-right: auto; padding: 0 15px; }
+        
+        /* ESTILOS DE LA CABECERA CON MENÚ INTERACTIVO REINSTALADO */
         header { background-color: #FFFDF9; padding: 15px 0; border-bottom: 2px solid #F4F1EA; text-align: center; }
         .logo-cabecera { width: 240px; height: auto; margin: 0 auto; display: block; }
         .titulo-cabecera { font-size: 1.4rem; color: #8B1E3F; font-weight: bold; margin-top: 5px; text-align: center; }
+        
+        .menu-navegacion ul { list-style: none; padding: 0; text-align: center; margin-top: 10px; display: block; }
+        .menu-navegacion li { display: inline-block; margin: 5px 10px; }
+        .menu-navegacion a { font-weight: bold; font-size: 0.95rem; color: #2B2D42; padding: 5px 10px; border: 1px solid #E29578; border-radius: 5px; text-decoration: none; background-color: white; display: inline-block; }
+        .menu-navegacion a:hover { background-color: #F4F1EA; color: #8B1E3F; }
+
         .banner-principal { background-color: #8B1E3F; color: white; padding: 35px 20px; text-align: center; margin-bottom: 20px; }
         .banner-principal h2 { color: white; }
         .banner-principal p { font-style: italic; color: #E29578; }
@@ -22,7 +30,6 @@
         .tarjeta-fruta img { width: 100%; height: 90px; object-fit: cover; display: block; margin: 0 auto; }
         .nombre-fruta { font-size: 0.75rem; font-weight: bold; color: #8B1E3F; margin-top: 4px; text-align: center; }
         
-        /* ESTILO PARA EL LINK DIRECTO DE FACEBOOK */
         .link-facebook-directo {
             color: #8B1E3F;
             font-weight: bold;
@@ -39,14 +46,24 @@
 </head>
 <body>
 
-    <!-- CABECERA -->
+    <!-- CABECERA CON ENLACES PARA CADA SECCIÓN -->
     <header>
         <img src="logo.png" alt="Mermeladas Tita Gaby" class="logo-cabecera">
         <div class="titulo-cabecera">Mermeladas Artesanales Tita Gaby</div>
+        <nav class="menu-navegacion">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#comercio">Ventas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- INICIO -->
-    <div class="banner-principal">
+    <div id="inicio" class="banner-principal">
         <h2>Tradición y Sabor Auténtico</h2>
         <p>"Fruta tropical de temporada en cada cucharada"</p>
     </div>
@@ -58,95 +75,99 @@
     <hr style="width:90%; margin:20px auto; border:1px solid #F4F1EA;">
 
     <!-- QUIENES SOMOS -->
-    <h2>Quiénes Somos</h2>
-    <h3>Nuestra Historia</h3>
-    <p>Fundado en 2020 como una iniciativa universitaria, Mermeladas Artesanales Tita Gaby es hoy un emprendimiento dedicado a la conservación del sabor natural, utilizando las recetas heredadas de la abuela para garantizar un producto auténtico y familiar.</p>
-    
-    <h3>Misión</h3>
-    <p>Ofrecer mermeladas artesanales de la más alta calidad, elaboradas con frutas 100% naturales cosechadas en nuestra propia tierra y libres de edulcorantes artificiales, brindando a nuestros clientes un sabor lleno de tradición.</p>
-    
-    <h3>Visión</h3>
-    <p>Consolidarnos como una empresa modelo en la producción sostenible de conservas naturales, siendo la primera opción para los consumidores que buscan un estilo de vida saludable y sin aditivos artificiales.</p>
-    
-    <h3>Nuestros Valores</h3>
-    <p>• Tradición familiar: Preservamos el legado culinario de la abuela.</p>
-    <p>• Autenticidad: Frutas 100% reales de nuestra tierra, sin químicos.</p>
-    <p>• Sostenibilidad: Respetamos el ciclo natural de la tierra.</p>
-    <p>• Calidad artesanal: Minuciosa selección en el campo y cuidado en el envasado.</p>
-    <p>• Bienestar: Opciones alimenticias que nutran a las familias de forma exquisita.</p>
+    <div id="nosotros">
+        <h2>Quiénes Somos</h2>
+        <h3>Nuestra Historia</h3>
+        <p>Fundado en 2020 como una iniciativa universitaria, Mermeladas Artesanales Tita Gaby es hoy un emprendimiento dedicado a la conservación del sabor natural, utilizando las recetas heredadas de la abuela para garantizar un producto auténtico y familiar.</p>
+        
+        <h3>Misión</h3>
+        <p>Ofrecer mermeladas artesanales de la más alta calidad, elaboradas con frutas 100% naturales cosechadas en nuestra propia tierra y libres de edulcorantes artificiales, brindando a nuestros clientes un sabor lleno de tradición.</p>
+        
+        <h3>Visión</h3>
+        <p>Consolidarnos como una empresa modelo en la producción sostenible de conservas naturales, siendo la primera opción para los consumidores que buscan un estilo de vida saludable y sin aditivos artificiales.</p>
+        
+        <h3>Nuestros Valores</h3>
+        <p>• Tradición familiar: Preservamos el legado culinario de la abuela.</p>
+        <p>• Autenticidad: Frutas 100% reales de nuestra tierra, sin químicos.</p>
+        <p>• Sostenibilidad: Respetamos el ciclo natural de la tierra.</p>
+        <p>• Calidad artesanal: Minuciosa selección en el campo y cuidado en el envasado.</p>
+        <p>• Bienestar: Opciones alimenticias que nutran a las familias de forma exquisita.</p>
+    </div>
 
     <hr style="width:90%; margin:20px auto; border:1px solid #F4F1EA;">
 
     <!-- PRODUCTOS -->
-    <h2>Nuestras Mermeladas</h2>
-    <p style="font-style: italic;">Mermeladas de frutas tropicales de temporada, elaboradas con amor.</p>
-    
-    <div class="caja-mermelada">
-        <img src="Mermelada Pequeña.png" alt="Mermelada Pequeña">
-        <h3>Presentación Pequeña (250g)</h3>
-        <div class="precio-producto">3500 colones</div>
-    </div>
-    
-    <div class="caja-mermelada">
-        <img src="Mermelada Grande.png" alt="Mermelada Grande">
-        <h3>Presentación Grande (500g)</h3>
-        <div class="precio-producto">6000 colones</div>
+    <div id="productos">
+        <h2>Nuestras Mermeladas</h2>
+        <p style="font-style: italic;">Mermeladas de frutas tropicales de temporada, elaboradas con amor.</p>
+        
+        <div class="caja-mermelada">
+            <img src="Mermelada Pequeña.png" alt="Mermelada Pequeña">
+            <h3>Presentación Pequeña (250g)</h3>
+            <div class="precio-producto">3500 colones</div>
+        </div>
+        
+        <div class="caja-mermelada">
+            <img src="Mermelada Grande.png" alt="Mermelada Grande">
+            <h3>Presentación Grande (500g)</h3>
+            <div class="precio-producto">6000 colones</div>
+        </div>
     </div>
 
     <hr style="width:90%; margin:20px auto; border:1px solid #F4F1EA;">
 
     <!-- GALERÍA DE SABORES -->
-    <h2>Galería de Sabores</h2>
-    <p style="font-style: italic;">Frutas frescas y naturales utilizadas en nuestras recetas de temporada:</p>
-    
-    <div class="galeria-fija">
-        <div class="tarjeta-fruta"><img src="Cas.png" alt="Cas"><div class="nombre-fruta">Cas</div></div>
-        <div class="tarjeta-fruta"><img src="carambola.png" alt="Carambola"><div class="nombre-fruta">Carambola</div></div>
-        <div class="tarjeta-fruta"><img src="maracuya.png" alt="Maracuya"><div class="nombre-fruta">Maracuyá</div></div>
-        <div class="tarjeta-fruta"><img src="Papaya Piña.png" alt="Papaya Piña"><div class="nombre-fruta">Papaya Piña</div></div>
-        <div class="tarjeta-fruta"><img src="frambuesa.png" alt="Frambuesa"><div class="nombre-fruta">Frambuesa</div></div>
-        <div class="tarjeta-fruta"><img src="manga.png" alt="Manga"><div class="nombre-fruta">Manga</div></div>
-        <div class="tarjeta-fruta"><img src="guayaba.png" alt="Guayaba"><div class="nombre-fruta">Guayaba</div></div>
-        <div class="tarjeta-fruta"><img src="Fresas.png" alt="Fresas"><div class="nombre-fruta">Fresas</div></div>
-        <div class="tarjeta-fruta"><img src="Moras.png" alt="Moras"><div class="nombre-fruta">Moras</div></div>
-        <div class="tarjeta-fruta"><img src="Tomate.png" alt="Tomate"><div class="nombre-fruta">Tomate Cherry</div></div>
-        <div class="tarjeta-fruta"><img src="Ayote.png" alt="Ayote"><div class="nombre-fruta">Ayote</div></div>
+    <div id="galeria">
+        <h2>Galería de Sabores</h2>
+        <p style="font-style: italic;">Frutas frescas y naturales utilizadas en nuestras recetas de temporada:</p>
+        
+        <div class="galeria-fija">
+            <div class="tarjeta-fruta"><img src="Cas.png" alt="Cas"><div class="nombre-fruta">Cas</div></div>
+            <div class="tarjeta-fruta"><img src="carambola.png" alt="Carambola"><div class="nombre-fruta">Carambola</div></div>
+            <div class="tarjeta-fruta"><img src="maracuya.png" alt="Maracuya"><div class="nombre-fruta">Maracuyá</div></div>
+            <div class="tarjeta-fruta"><img src="Papaya Piña.png" alt="Papaya Piña"><div class="nombre-fruta">Papaya Piña</div></div>
+            <div class="tarjeta-fruta"><img src="frambuesa.png" alt="Frambuesa"><div class="nombre-fruta">Frambuesa</div></div>
+            <div class="tarjeta-fruta"><img src="manga.png" alt="Manga"><div class="nombre-fruta">Manga</div></div>
+            <div class="tarjeta-fruta"><img src="guayaba.png" alt="Guayaba"><div class="nombre-fruta">Guayaba</div></div>
+            <div class="tarjeta-fruta"><img src="Fresas.png" alt="Fresas"><div class="nombre-fruta">Fresas</div></div>
+            <div class="tarjeta-fruta"><img src="Moras.png" alt="Moras"><div class="nombre-fruta">Moras</div></div>
+            <div class="tarjeta-fruta"><img src="Tomate.png" alt="Tomate"><div class="nombre-fruta">Tomate Cherry</div></div>
+            <div class="tarjeta-fruta"><img src="Ayote.png" alt="Ayote"><div class="nombre-fruta">Ayote</div></div>
+        </div>
     </div>
 
     <hr style="width:90%; margin:20px auto; border:1px solid #F4F1EA;">
 
     <!-- CANALES DE VENTA -->
-    <h2>Canales de Venta</h2>
-    <h3>Comercio Digital B2C</h3>
-    <p>Atendemos de forma directa al consumidor final de manera digital. Gestionamos tus pedidos de manera ágil y totalmente personalizada a través de nuestras plataformas oficiales.</p>
-    
-    <h3>Protección de Datos Garantizada</h3>
-    <p>Toda tu navegación en este sitio web está protegida bajo un sistema de seguridad digital con certificado de navegación cifrada y protocolo web de datos seguro.</p>
-    
-    <h3>Métodos de Pago Aceptados</h3>
-    <p>Métodos de pago autorizados y seguros: Transferencia por SINPE Móvil y Dinero en Efectivo de forma presencial.</p>
-    
-    <h3>Plataformas de Comunicación</h3>
-    <p>Contacto de WhatsApp: 61545499</p>
-    <p>Enlace de Facebook:</p>
-    <p><a href="https://facebook.com" target="_blank" class="link-facebook-directo">Mermeladas Artesanales Tita Gaby en Facebook</a></p>
+    <div id="comercio">
+        <h2>Canales de Venta</h2>
+        <h3>Comercio Digital B2C</h3>
+        <p>Atendemos de forma directa al consumidor final de manera digital. Gestionamos tus pedidos de manera ágil y totalmente personalizada a través de nuestras plataformas oficiales.</p>
+        
+        <h3>Protección de Datos Garantizada</h3>
+        <p>Toda tu navegación en este sitio web está protegida bajo un sistema de seguridad digital con certificado de navegación cifrada y protocolo web de datos seguro.</p>
+        
+        <h3>Métodos de Pago Aceptados</h3>
+        <p>Métodos de pago autorizados y seguros: Transferencia por SINPE Móvil y Dinero en Efectivo de forma presencial.</p>
+        
+        <h3>Plataformas de Comunicación</h3>
+        <p>Contacto de WhatsApp: 61545499</p>
+        <p>Enlace de Facebook:</p>
+        <p><a href="https://facebook.com" target="_blank" class="link-facebook-directo">Mermeladas Artesanales Tita Gaby en Facebook</a></p>
+    </div>
 
     <hr style="width:90%; margin:20px auto; border:1px solid #F4F1EA;">
 
     <!-- CONTACTO DIRECTO -->
-    <h2>Contacto Directo</h2>
-    <p>Número Telefónico Central: 61545499</p>
-    <p>Correo Electrónico: mermeladastitagaby@gmail.com</p>
-    <p>Ubicación Oficial: Puntarenas, Puntarenas, Costa Rica</p>
+    <div id="contacto">
+        <h2>Contacto Directo</h2>
+        <p>Número Telefónico Central: 61545499</p>
+        <p>Correo Electrónico: mermeladastitagaby@gmail.com</p>
+        <p>Ubicación Oficial: Puntarenas, Puntarenas, Costa Rica</p>
+    </div>
 
     <hr style="width:90%; margin:20px auto; border:1px solid #F4F1EA;">
 
     <!-- COPYRIGHT Y CRÉDITOS -->
     <p style="font-weight: bold; margin-top: 20px;">Copyright, 2026, Mermeladas Artesanales Tita Gaby, Todos los derechos reservados</p>
     <p>Mermeladas Artesanales Tita Gaby Tel: 61545499</p>
-    <p style="font-size: 0.85rem; color: #a0a2b3; margin-top: 10px;">
-        Sitio web diseñado por: María Gabriela Quirós Madrigal & Susana Quirós Cognuck.
-    </p>
-
-</body>
-</html>
